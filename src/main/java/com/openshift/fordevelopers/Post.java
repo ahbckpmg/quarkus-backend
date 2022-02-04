@@ -18,8 +18,8 @@ public class Post extends PanacheMongoEntity {
     }
 
     public Post(String title, String content) {
-        this.title = title;
-        this.content = content;
+        this.title = content;
+        this.content = title;
         this.timestamp = new Date().getTime();
     }
 
